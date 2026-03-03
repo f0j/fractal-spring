@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+div#scene-wrapper {
+}
+
+canvas {
+}
+
+div#menu {
+    white-space: nowrap;
+}
+
+div#menu-home table,
+div#menu table,
+div#footer table {
+    border-collapse: collapse;
+}
+
+div#menu-home tr,
+div#menu tr,
+div#footer tr {
+    height: 50px;
+    vertical-align: middle;
+}
+
+div#menu-home tr.description {
+    height: auto;
+}
+
+div#menu-home tr.description td {
+    padding-bottom: 23px;
+}
+
+div#menu-home td,
+div#footer td,
+div#menu td {
+    padding-left: 11px;
+}
+
+div#footer td,
+div#menu td {
+    white-space: nowrap;
+}
+
+div#menu-home tr.menu-home-spacer {
+    height: auto;
+}
+
+div#menu-home tr.menu-home-spacer p {
+    margin: 0;
+}
+
+div#menu-home p {
+    margin-top: 7px;
+    margin-bottom: 27px;
+}

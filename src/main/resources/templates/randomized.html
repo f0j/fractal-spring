@@ -1,0 +1,40 @@
+<html lang="">
+<head>
+    <title>fojFractal - Randomized</title>
+    <style>
+
+[(${inlineCss})]
+
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <table>
+        <tr>
+            <td><a href="/">fojFractal</a></td>
+            <td><button onclick="generate('')">generate</button></td>
+        </tr>
+    </table>
+</div>
+
+<div id="scene-wrapper"><canvas id="scene"></canvas></div>
+
+<div id="footer">
+    <table>
+        <tr>
+            <td><span>Progress:&nbsp;</span><span id="progress"></span></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+let _url = "ws://localhost:8080/randomized-ws";
+
+[(${inlineJs})]
+
+</script>
+
+</body>
+</html>

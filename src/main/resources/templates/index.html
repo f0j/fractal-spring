@@ -1,0 +1,45 @@
+<html lang="">
+<head>
+    <title>fojFractal - Home</title>
+    <style>
+
+[(${inlineCss})]
+
+    </style>
+</head>
+<body>
+
+<div id="menu-home">
+    <table>
+        <tr><td><a href="/">fojFractal</a></td></tr>
+        <tr class="menu-home-spacer"><td><p>&nbsp;</p></td></tr>
+        <tr><td>
+            <a href="/mandelbrot">Mandelbrot Set</a>
+            <p>"is a two-dimensional set that is defined in the complex plane as the complex numbers <i>c</i> for which the function <i>f<sub>c</sub>(z) = z<sup>2</sup> + c</i> does not diverge to infinity when iterated starting at <i>z = 0</i>"&nbsp;<sup><a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></sup></p>
+        </td></tr>
+        <tr><td>
+            <a href="/julia">Julia Set</a>
+            <p><i>f(z) = z<sup>2</sup> + c</i> where <i>c = -0.8 + 0.156i</i> and <i>z<sub>0</sub> = -2 + -2i</i><sup>&nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/Julia_set">Wikipedia</a></sup></p>
+        </td></tr>
+        <tr><td>
+            <a href="/squared-divided">Squared-Divided</a>
+            <p><i>f(z) = z<sup>2</sup> + c/z</i> where <i>c = 0.1 + -0.129i</i> and <i>z<sub>0</sub> = -2 + -2i</i>.</p>
+        </td></tr>
+        <tr><td>
+            <a href="/multiplied-exponent">Multiplied-Exponent</a>
+            <p><i>f(z) = c * e<sup>z</sup></i> where <i>c = 0.5444 + -0.0622</i> and <i>z<sub>0</sub> = -2 + -2i</i>.</p>
+        </td></tr>
+        <tr><td>
+            <a href="/randomized">Randomized</a>
+            <p>Proof-of-concept meant to evaluate HTML Canvas, Spring WebsocketHandlers and Java mechanisms to generate a resource intensive image using multiple threads.</p>
+        </td></tr>
+    </table>
+</div>
+
+<script>
+
+[(${inlineJs})]
+
+</script>
+</body>
+</html>

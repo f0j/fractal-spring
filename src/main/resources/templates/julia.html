@@ -1,0 +1,45 @@
+<html lang="">
+<head>
+    <title>fojFractal - Julia</title>
+    <style>
+
+[(${inlineCss})]
+
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <table>
+        <tr>
+            <td><a href="/">fojFractal</a></td>
+            <td><button onclick="generate('')">generate</button></td>
+            <td><button onclick="twoZoomIn()">zoom-in</button></td>
+            <td><button onclick="twoZoomOut()">zoom-out</button></td>
+            <td><label><input type="checkbox" id="move" onclick="toggleMoveCursor()" />center on click</label></td>
+        </tr>
+    </table>
+</div>
+
+<div id="scene-wrapper"><canvas id="scene"></canvas></div>
+
+<div id="footer">
+    <table>
+        <tr>
+            <td><span>Progress:&nbsp;</span><span id="progress"></span></td>
+            <td><span>Zoom:&nbsp;</span><span id="zoomed"></span></td>
+            <td><span>Origin:&nbsp;</span><span id="orig"></span></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+let _url = "ws://localhost:8080/julia-ws";
+
+[(${inlineJs})]
+
+</script>
+
+</body>
+</html>
