@@ -28,13 +28,15 @@ Mine look like (note the directories above; these will be different for you):
 2) `set JAVA_HOME=C:\Users\FOJ\Downloads\zulu17.64.17-ca-jdk17.0.18-win_x64\zulu17.64.17-ca-jdk17.0.18-win_x64`
 3) `mvnw.cmd spring-boot:run`
 
-Your commands have to be typed without error or else the application will fail to start.
+Your commands must be typed without error or else the application will fail to start.
 
 A prompt may ask you to give the Java JDK permission to access your network. The application requires the internet to download a few dependencies to build and run.
 
 If successful, you should see `[...] Started FractalApplication [...]` in the terminal.
 
 With the server running locally, navigate to http://localhost:8080 in your browser to see the home page. From there, you can generate various complex fractals. A good place to start is the `Mandelbrot Set`.
+
+## Using the application
 
 The `generate` button will generate a complex fractal at the default coordinates. 
 
@@ -45,6 +47,8 @@ The `zoom-in` and `zoom-out` buttons will zoom the image at the center of the cu
 The `center on click` checkbox enables clicking on the image to re-center the coordinates.
 
 To stop the server, open the terminal that is running the application and press `Ctrl` + `C` then answering `Y` to terminate the batch job. Alternatively, the application will also stop if you simply close the terminal.
+
+## Troubleshooting
 
 Stopping the server while it is generating an image will not automatically end the process. Your computer may be busy until the image completes even if the browser is closed.
 
