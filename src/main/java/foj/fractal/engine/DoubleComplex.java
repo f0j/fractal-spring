@@ -38,7 +38,7 @@ public class DoubleComplex {
 
         return new DoubleComplex(
                 left.re - right.re,
-                left.im - right.re);
+                left.im - right.im);
     }
 
     public static DoubleComplex multiply(
